@@ -1,0 +1,37 @@
+.container-main {
+     @include mq(large) {
+          margin-left: 13%;
+          margin-top: 0;
+          margin-bottom: 0;
+          margin-right: 0;
+     }
+}
+
+.container {
+     @include center;
+     @extend %clearfix;
+     padding-top: 40px;
+     padding-bottom: 20px;
+     width: 80%;
+}
+
+
+.container-heading {
+     width: 100%;
+     margin-bottom: 40px;
+     @include mq(large) {
+         text-align: center;
+         margin-bottom: 60px
+     }
+ }
+
+ .container-footer {
+     @include center;
+     @extend %clearfix;
+     padding-top: 30px;
+     padding-bottom: 30px;
+     width: 80%;
+ }
+ .text-container {
+     text-align: center;
+ }

@@ -1,0 +1,125 @@
+//hamburger
+
+.hamburger {
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;    
+    padding: 10px;
+    top: 20px;
+    right: 20px;
+    background-color: $color-primary;
+    border-radius: 5px;
+    z-index: 2;
+    @media (min-width: $break-lrg) {
+        display: none;
+    }
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 2px;
+    margin: 6px auto;
+    background-color: $white;
+    transition: all 0.3s ease-in-out;
+}
+
+//small screen nav bar
+
+
+.ham-logo {
+    height: 90px;
+    background-color: $color-secondary;
+    border-bottom: 1px solid $black;
+}
+.initials{
+    height: auto;
+    width: 90px;
+}
+.small-nav {
+    position: fixed;
+    top: -100%;
+    right: 0;
+    left: 0;
+    color: $white;
+    background-color: darken($color-primary, $amount: 10%);   
+    transition: .6s;
+    z-index: 1;
+}
+.small-nav.active {
+   top: 0;
+}
+
+.nav-ul-small {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 0;
+    & {
+        li {
+            width: 40%;
+            padding: 15px 0;
+        }
+    }
+}
+
+// Main body
+
+.nav-bar {
+    background-color: $color-primary;
+    color: $white;
+    background-image: linear-gradient(to right, $color-primary 10%, rgba(0,0,0, .5));
+    @include mq(large) {
+    float: left;
+    position: -webkit-sticky;
+    position: fixed;
+    text-align: center;
+    color: $white;
+    padding-top: 20px;
+    height: 100vh;
+    width: 13%;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-right: 1px solid $black;
+    overflow: hidden;
+    }
+}
+
+//logo top 
+
+.logo-text {
+    @include rounded(150px);
+    box-shadow: 10px 10px 30px rgba($white, .9);
+}
+
+
+// Nav list
+
+.nav-ul {
+    margin-top: 80px;
+    & {
+        li {
+            line-height: 1.2rem;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+.nav-li {
+    @include link-hover;
+}

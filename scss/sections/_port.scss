@@ -1,0 +1,103 @@
+//main
+.port-item {
+    @include box;
+    border: 1px solid $color-primary;
+    margin-bottom: 40px;
+    @include mq(large) {
+        width: 48%;
+        transition: transform .3s;
+    }
+}
+
+.port-item:hover {
+    background-color: $light-purple;
+    @include mq(large){
+        transform: scale(1.05);
+    }
+}
+
+.port-item:hover .info-text {
+    display: block;
+    @media (max-width: $break-xlrg){
+        display: none;
+    }
+}
+//project image
+
+.project-img {
+    @include flex-center;
+    @include bk-image(220px);
+    border-bottom: 1px solid $color-secondary;
+    @include mq(large){
+        @include bk-image(280px);
+    }
+}
+
+.text-img {
+    @include heading(1.6rem);
+    @include center;
+    @include center-box;
+    color: $white;
+    @media (max-width: $break-sml){
+        text-align: center;
+    }
+}
+
+.project-info {
+    @include flex-center;
+    background-color: rgba($color: #000000, $alpha: .8);
+}
+
+.info-text {
+    display: none;
+    @include center-box;
+    @include p(1.2rem, 1.7rem, 2px);
+    color: $white;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: rgba($color: $white, $alpha: .5) 1px 0 10px;
+    width: 70%;
+}
+
+.info-text-two {
+    font-size: .9rem;
+    font-weight: $font-weight--light;
+    text-transform: uppercase;
+}
+
+
+.code-icons {
+    font-size: 1.5rem;
+    margin-right: 10px;
+    @include mq(large) {
+        font-size: 1.8rem;
+    }
+    @include mq(x-large) {
+        font-size: 2rem;
+    }
+}
+//section Content 
+
+.port-text {
+    padding: 20px 20px;  
+}
+
+.pro-heading {
+   @include heading(1.2rem);
+   margin-bottom: 10px;
+}
+
+.view-heading {
+    @include heading(1rem, 1.8rem);
+    &:hover {
+        text-decoration: underline;;
+    }
+}
+
+//layout 
+
+.port-section {
+    @include flexbox;
+    padding-bottom: 50px;
+    border-bottom: 1px dashed $color-secondary;
+}

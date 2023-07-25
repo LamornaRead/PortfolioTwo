@@ -1,0 +1,243 @@
+.code-item{
+    @include box-purple;
+    @include center;
+    border: 1px solid $color-secondary;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    @include mq(medium) {
+        width: 90%;
+    }
+    @include mq(large) {
+        width: 80%;
+    }
+}
+
+.code-item-header {
+    @include heading-small(1.2rem, 1.4rem);
+    @include mq(large) {
+        @include heading-small(1.4rem, 1.6rem);
+    }
+}
+.code-item-text {
+    @include p(0.7rem, 1rem, 2px);
+    font-weight: $font-weight--light;
+    @include mq(small) {
+        @include p(.8rem, 1.1rem, 2px);
+    }
+    @include mq(medium) {
+        @include p(.9rem, 1.2rem, 1px);
+        margin: 20px 0;
+    }
+}
+.code-snippet {
+    background-color: #2d2d2d;
+    color: #ccc;
+    padding: 10px;
+    font-size: 0.7rem;
+    line-height: 1rem;
+    overflow: scroll;
+    height: 300px;
+    @include mq(large){
+        font-size: .8rem;
+        line-height: 1.2rem;
+    }
+}
+
+// slider design 
+.slider-nav {
+    @include center;
+    @include mq(large){
+        width: 80%;
+    }
+}
+.slider-for {
+    @include center;
+    @include mq(large) {
+        width: 80%;
+    }
+}
+.slide-text {
+    @include box-purple(520px);
+    @include center;
+    border: 1px solid $color-secondary;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    @include mq(small) {
+        @include box-purple(400px);
+    }
+    @include mq(medium) {
+        @include box-purple(420px);
+        width: 90%;
+    }
+    @include mq(large) {
+        @include box-purple(450px);
+        width: 80%;
+    }
+    @include mq(x-large) {
+        @include box-purple(350px);
+    }
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: $black;
+    @include mq(medium){
+        font-size: 25px;
+    }
+    @include mq(large) {
+        font-size: 30px;
+    }
+}
+
+.slick-dots li button:before{
+    font-size: 10px;
+}
+
+// span code colors 
+
+.key {
+    color: #188df4;
+}
+.var {
+    color: #4cc4db;
+}
+
+.com {
+    color: #1ad921;
+}
+.string {
+    color: #17bc1d;
+}
+.num {
+    color: #aefeb1;
+}
+.op {
+    color: #ca3f3f;
+}
+.func {
+    color: #db8a4c;
+}
+.func-call {
+    color: #ffe4a6;
+}
+.method {
+    color: #ad84fa;
+}
+.doc {
+    color: #fde703;
+}
+
+
+/// data base challange styling ///////////////////
+
+//main
+
+.data-display {
+    @include box-purple;
+    @include box;
+    margin-top: 100px;
+    @include mq(large) {
+        padding: 40px;
+    }
+}
+
+//img
+
+.data-img-con {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.data-img {
+    @include center;
+    min-width: 50px;
+    max-width: 600px;
+    width: 100%;
+}
+
+// explantaion text
+
+
+.data-heading {
+    font-size: 1.2rem;
+    font-weight: $font-weight--light;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    @include mq(large) {
+        font-size: 1.6rem;
+        font-weight: $font-weight--regular;
+    }
+}
+
+.data-text{
+    font-size: .8rem;
+    font-weight: $font-weight--light;
+    letter-spacing: 2px;
+    line-height: 1.3rem;
+    margin: 20px 0;
+    @include mq(medium) {
+        font-size: 1rem;
+        margin: 30px 0;
+    }
+    @include mq(x-large) {
+        font-size: .8rem;
+        margin: 15px 0;
+    }
+}
+
+// datbase code
+
+.database-code {
+    margin: 40px 0;
+}
+
+.data-snippet {
+    background-color: #2d2d2d;
+    color: #ccc;
+    padding: 10px;
+    font-size: 0.7rem;
+    line-height: 1rem;
+    overflow: scroll;
+    height: 200px;
+        @include mq(large){
+        font-size: .8rem;
+        line-height: 1.2rem;
+    }
+}
+
+// data table 
+
+.table-img-con {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.table-img {
+    min-width: 50px;
+    max-width: 600px;
+    width: 100%;
+}
+
+// large display //
+
+.large-display {
+    @include mq(x-large) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+}
+
+.data-info {
+    @include mq(x-large) {
+        width: 45%;
+    }
+}
+
+.data-table {
+    @include mq(x-large) {
+        margin-top: 80px;
+    }
+}
