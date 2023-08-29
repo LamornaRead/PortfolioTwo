@@ -1302,6 +1302,11 @@ a {
   padding: 20px 0;
 }
 
+/* line 104, ../PortfolioTwo/scss/sections/_contact.scss */
+.succ {
+  color: #24d36e;
+}
+
 /* line 3, ../PortfolioTwo/scss/sections/_about.scss */
 .about-section {
   height: auto;
