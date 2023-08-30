@@ -63,10 +63,10 @@ function validateForm() {
         return false;
     }
 
-    document.addEventListener('submit', function(event) {
-        event.preventDefault();
-        event.target.reset();
-    });
+    // document.addEventListener('submit', function(event) {
+    //     event.preventDefault();
+    //     event.target.reset();
+    // });
     return true;
 }
 
