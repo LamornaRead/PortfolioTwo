@@ -7,11 +7,11 @@ let characterCounter = document.getElementById('char-count');
 const countCharacters = () => {
     let numberOfEnteredChars = textArea.value.length;
     let counter = numberOfEnteredChars;
-    if(numberOfEnteredChars <= 140) {
-        characterCounter.textContent = counter + '/140';
+    if(numberOfEnteredChars <= 40) {
+        characterCounter.textContent = counter + '/40';
         characterCounter.style.color = 'red';
     } else {
-        characterCounter.textContent = counter + '/140';
+        characterCounter.textContent = counter + '/40';
         characterCounter.style.color = '#24d36e';
     }
     (this).addEventListener("submit", function(){

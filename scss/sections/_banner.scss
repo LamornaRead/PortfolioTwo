@@ -1,4 +1,8 @@
 //main 
+#portfolio {
+    scroll-behavior: smooth;
+}
+
 .banner {
     @include flex-center;
     @include bk-image(100vh);

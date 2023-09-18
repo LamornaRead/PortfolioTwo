@@ -41,6 +41,10 @@
                         <li><a class="nav-li" href="coding.html">Examples</a></li>
                         <li><a class="nav-li" href="scs.html">SCS</a></li>
                         <li><a class="nav-li" href="#contact">Contact</a></li>
+                        <li>
+                            <a class="nav-li" href="https://www.linkedin.com/in/lamorna-read-54292b284/" target="_blank"><i class="fa-brands fa-linkedin fa-xl" style="color: #ffffff;"></i></a>
+                            <a class="nav-li" href="https://github.com/LamornaRead" target="_blank"><i class="fa-brands fa-github fa-xl" style="color: #ffffff;"></i></a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -57,6 +61,10 @@
                         <li><a class="nav-li" href="coding.html">Coding Examples</a></li>
                         <li><a class="nav-li" href="scs.html">SCS Scheme</a></li>
                         <li><a class="nav-li" href="#contact">Contact Me</a></li>
+                        <li>
+                            <a class="nav-li" href="https://www.linkedin.com/in/lamorna-read-54292b284/" target="_blank"><i class="fa-brands fa-linkedin fa-xl" style="color: #ffffff;"></i></a>
+                            <a class="nav-li" href="https://github.com/LamornaRead" target="_blank"><i class="fa-brands fa-github fa-xl" style="color: #ffffff;"></i></a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -77,7 +85,7 @@
                 </div>
             </div>
             <div class="scroll">
-                <h2 class="section-heading-small"><a href="#portfolio">Scroll Down</a></h2>
+                <h2 class="section-heading-small"><a class="heading-scroll" href="#portfolio">Scroll Down</a></h2>
                 <h3 class="section-heading-small"><i class="fa-solid fa-chevron-down"></i></h3>
             </div>
         </div>
@@ -118,50 +126,6 @@
                         </div>
                     </a>
                 </div>
-                <div class="port-item">
-                    <a href="#">        
-                        <div class="project-img" style="background-image: url(images/watercolour_night_sky_background_2607.jpg);">
-                            <h3 class="text-img">Placeholder Image</h3>
-                        </div>
-                        <div class="port-text">
-                            <h3 class="pro-heading">Project Three</h3>
-                            <h4 class="view-heading">View Project <i class="fa-solid fa-arrow-right"></i></h4>
-                        </div>
-                    </a>
-                </div>
-                <div class="port-item">
-                    <a href="#">
-                        <div class="project-img" style="background-image: url(images/watercolour_night_sky_background_2607.jpg);">
-                            <h3 class="text-img">Placeholder Image</h3>
-                        </div>
-                        <div class="port-text">
-                            <h3 class="pro-heading">Project Four</h3>
-                            <h4 class="view-heading">View Project <i class="fa-solid fa-arrow-right"></i></h4>
-                        </div>
-                    </a>
-                </div>
-                <div class="port-item">
-                    <a href="#">
-                        <div class="project-img" style="background-image: url(images/watercolour_night_sky_background_2607.jpg);">
-                            <h3 class="text-img">Placeholder Image</h3>
-                        </div>
-                        <div class="port-text">
-                            <h3 class="pro-heading">Project Five</h3>
-                            <h4 class="view-heading">View Project <i class="fa-solid fa-arrow-right"></i></h4>
-                        </div>
-                    </a>
-                </div>
-                <div class="port-item">
-                    <a href="#">
-                        <div class="project-img" style="background-image: url(images/watercolour_night_sky_background_2607.jpg);">
-                            <h3 class="text-img">Placeholder Image</h3>
-                        </div>
-                        <div class="port-text">
-                            <h3 class="pro-heading">Project Six</h3>
-                            <h4 class="view-heading">View Project <i class="fa-solid fa-arrow-right"></i></h4>
-                        </div>
-                    </a>
-                </div>
             </div>
         </div>
         <!--Contact Form-->
@@ -174,7 +138,7 @@
                     <div class="section">
                         <h3 class="heading">Get In Touch</h3>
                         <p class="section-content">Do you want to get in touch? Please do! You can give me a call at ...</p>
-                        <h3 class="section-heading-two phone-me">07934858981</h3>
+                        <h3 class="section-heading-two phone-me"><a href="tel:07934858981">07934858981</a></h3>
                         <p class="section-content">Or send me an email at ...</p>
                         <h3 class="section-heading-two email-me"><a href="mailto:lamornaread@outlook.com">lamornaread<br class="medium-hidden">@outlook.com</a></h3>
                     </div>
@@ -195,7 +159,7 @@
     </div>
     <footer class="container-main">
         <div class="container-footer">
-            <a href="#" class="text-container">
+            <a href="#top" class="text-container">
                 <h3 class="section-heading-small"><i class="fa-solid fa-chevron-up"></i></h3>
                 <h2 class="section-heading-small">Back To Top</h2>
             </a>
