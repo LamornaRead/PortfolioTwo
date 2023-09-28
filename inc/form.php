@@ -3,6 +3,8 @@
 include('connect.php');
 
 $firstName = $lastName = $email = $subject = $comment = $success = "";
+$errors = [];
+$inputs = [];
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   $firstName = test_input($_POST['firstname']);
@@ -11,11 +13,57 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   $subject = test_input($_POST['subject']);
   $comment = test_input($_POST['message']);
 
-  $insertData = "INSERT INTO contact (firstname, lastname, email, subject, comment)
-                  VALUES ('$firstName', '$lastName', '$email', '$subject', '$comment')";
-  $conn->query($insertData);
 
-  $success = 'Submit Successful';
+    //validate name
+    if ($firstName === "") {
+        $errors['firstname'] = 'Please fill in first name!';
+    } else {
+        $inputs['firstname'] = $firstName;
+    }
+
+    if ($lastName === "") {
+        $errors['lastname'] = 'Please fill in last name!';
+    } else {
+        $inputs['lastname'] = $lastName;
+    }
+
+
+    // validate email 
+    if ($email === "") {
+        $errors['email'] = 'Please fill in email!';
+    } else {
+        $email = filter_var($email, FILTER_VALIDATE_EMAIL);
+        if($email === false) {
+            $errors['email'] = 'Please enter a valid email!';
+        } else {
+            $inputs['email'] = $email;
+        }
+    }
+
+    //validate subject
+    if($subject === "") {
+        $errors['subject'] = 'Please fill in subject!';
+    } else {
+        $inputs['subject'] = $subject;
+    }
+
+    //validate message 
+    if ($comment === "") {
+        $errors['message'] = 'Please fill out a message for us!';
+    } else {
+        $inputs['message'] = $comment;
+    }
+
+    if(count($errors) === 0) {
+        $insertData = "INSERT INTO contact (firstname, lastname, email, subject, comment)
+        VALUES ('$firstName', '$lastName', '$email', '$subject', '$comment')";
+
+        $conn->query($insertData);
+
+        $success = 'Submit Successful';
+      }
+
+
 }
 function test_input($data) {
     $data = trim($data);
@@ -33,32 +81,27 @@ function test_input($data) {
                     <div class="row">
                         <label class="hidden" for="fname"></label>
                         <input class="name" type="text" id="fname" name="firstname" placeholder="First Name . . .">
-                        <span id="fnameErr" class="error"></span>
                     </div>
 
                     <div class="row">
                         <label class="hidden" for="lname"></label>
                         <input class="name" type="text" id="lname" name="lastname" placeholder="Last Name . . .">
-                        <span id="lnameErr" class="error"></span>
                     </div>
 
                     <div class="row-full">
                         <label class="hidden" for="email"></label>
                         <input class="email" type="email" id="email" name="email" placeholder="Email Address . . .">
-                        <span id="emailErr" class="error"></span>
                     </div>
 
                     <div class="row-full">
                         <label class="hidden" for="subject"></label>
                         <input class="subject" type="text" id="subject" name="subject" placeholder="Subject . . .">
-                        <span id="subjectErr" class="error"></span>
                     </div>
 
                     <div class="row-full">
                         <label class="hidden" for="message"></label>
                         <textarea class="message" id="message" name="message" placeholder="Message . . ."></textarea>
                         <span id="messageErr" class="error"></span>
-                        <span id="char-count"></span>
                     </div>
 
                      <div class="row-full">
@@ -67,7 +110,16 @@ function test_input($data) {
                     <div class="row-full suc-mess">
                         <span id="success"></span>
                         <?php
-                        echo '<span class="succ">' . $success . '</span>'; 
+                            if(count($errors) === 0) {
+                                echo '<span class="succ">' . $success . '</span>'; 
+                            } else {
+                                foreach($errors as $err) {
+                                    echo '<div>';
+                                    echo '<span class="error">' . $err . '</span>';
+                                    echo '</div>';
+                                }
+                            }
+                        
                         ?>
                     </div>
                 </form>
