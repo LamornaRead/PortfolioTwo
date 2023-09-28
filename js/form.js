@@ -35,7 +35,6 @@ function validateForm() {
                     document.getElementById('subject'),
                     document.getElementById('message')
                     ];
-    const errMessage = new Array();
 
     let err = 0;
     for (var i = 0; i < fields.length; i++) {
