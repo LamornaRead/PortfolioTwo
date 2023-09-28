@@ -101,7 +101,7 @@ function test_input($data) {
                     <div class="row-full">
                         <label class="hidden" for="message"></label>
                         <textarea class="message" id="message" name="message" placeholder="Message . . ."></textarea>
-                        <span id="messageErr" class="error"></span>
+                        <span id="char-count"></span>
                     </div>
 
                      <div class="row-full">
