@@ -100,13 +100,13 @@
                     <a href="https://netmatters.lamorna-read.netmatters-scs.co.uk/" target="_blank">
                         <div class="project-img" style="background-image: url(images/project-card/rebuild.png);">
                             <div class="project-info">
-                                <p class="info-text">I rebuilt the Netmatters homepage as closely as possibly using HTML, SASS, CSS and JavaScript.</p>
+                                <p class="info-text">I rebuilt the Netmatters homepage as closely as possibly using HTML, SASS, CSS, JavaScript and PHP.</p>
                             </div>
                         </div>
                         <div class="port-text">
                             <h3 class="pro-heading">Netmatters Rebuild</h3>
-                            <p class="info-text-two  x-large-hidden">I rebuilt the Netmatters homepage as closely as possibly using HTML, SASS, CSS and JavaScript.</p>
-                            <p class="info-text-icons"><span class="code-icons"><i class="fa-brands fa-square-js"></i></span> <span class="code-icons"><i class="fa-brands fa-html5"></i></span> <span class="code-icons"><i class="fa-brands fa-css3-alt"></i></span> <span class="code-icons"><i class="fa-brands fa-sass"></i></span></p>
+                            <p class="info-text-two  x-large-hidden">I rebuilt the Netmatters homepage as closely as possibly using HTML, SASS, CSS, JavaScript and PHP.</p>
+                            <p class="info-text-icons"><span class="code-icons"><i class="fa-brands fa-square-js"></i></span> <span class="code-icons"><i class="fa-brands fa-html5"></i></span> <span class="code-icons"><i class="fa-brands fa-css3-alt"></i></span> <span class="code-icons"><i class="fa-brands fa-sass"></i></span> <span class="code-icons"><i class="fa-brands fa-php"></i></span></p>
                             <h4 class="view-heading">View Project <i class="fa-solid fa-arrow-right"></i></h4>
                         </div>
                     </a>
