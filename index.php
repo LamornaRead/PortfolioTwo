@@ -126,6 +126,21 @@
                         </div>
                     </a>
                 </div>
+                <div class="port-item">
+                    <a href="https://laravel-project.lamorna-read.netmatters-scs.co.uk/" target="_blank">
+                        <div class="project-img" style="background-image: url(images/project-card/laravel.png);">
+                            <div class="project-info">
+                                <p class="info-text">I created a project using Laravel and php. The project is a web app to control and manage company and employee data. I did this using HTML SASS CSS JavaScript PHP Laravel and Tailwind CSS.</p>
+                            </div>
+                        </div>
+                        <div class="port-text">
+                            <h3 class="pro-heading">Laravel Project</h3>
+                            <p class="info-text-two  x-large-hidden">I created a project using Laravel and php. The project is a web app to control and manage company and employee data. I did this using HTML SASS CSS JavaScript PHP Laravel and Tailwind CSS.</p>
+                            <p class="info-text-icons"><span class="code-icons"><i class="fa-brands fa-square-js"></i></span> <span class="code-icons"><i class="fa-brands fa-html5"></i></span> <span class="code-icons"><i class="fa-brands fa-css3-alt"></i></span> <span class="code-icons"><i class="fa-brands fa-sass"></i></span> <span class="code-icons"><i class="fa-brands fa-php"></i></span> <span class="code-icons"><i class="fa-brands fa-laravel"></i></span></p>
+                            <h4 class="view-heading">View Project <i class="fa-solid fa-arrow-right"></i></h4>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
         <!--Contact Form-->
