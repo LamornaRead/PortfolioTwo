@@ -1062,7 +1062,7 @@ a {
   margin-top: auto;
   margin-bottom: auto;
   font-size: 1.2rem;
-  line-height: 1.7rem;
+  line-height: 1.4rem;
   letter-spacing: 2px;
   color: #fff;
   text-transform: uppercase;
@@ -1141,6 +1141,11 @@ a {
     flex-direction: row;
     justify-content: space-between;
   }
+}
+
+/* line 109, ../PortfolioTwo/scss/sections/_port.scss */
+.login {
+  text-transform: lowercase;
 }
 
 /* line 3, ../PortfolioTwo/scss/sections/_contact.scss */

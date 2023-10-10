@@ -55,7 +55,7 @@
 .info-text {
     display: none;
     @include center-box;
-    @include p(1.2rem, 1.7rem, 2px);
+    @include p(1.2rem, 1.4rem, 2px);
     color: $white;
     text-transform: uppercase;
     text-align: center;
@@ -104,4 +104,8 @@
     @include flexbox;
     padding-bottom: 50px;
     border-bottom: 1px dashed $color-secondary;
+}
+
+.login {
+    text-transform: lowercase;
 }
